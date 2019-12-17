@@ -2644,8 +2644,8 @@ int func_78()
 		}
 		else
 		{
-			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar3, 3, 1, 1);
-			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iVar3, 0f, 1, 1);
+			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar3, 3, true, true);
+			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iVar3, 0f, true, true);
 			if (((iVar6 != 6 && iVar6 != 7) && iVar6 != 8) && iVar6 != 9)
 			{
 				OBJECT::REMOVE_DOOR_FROM_SYSTEM(iVar3);

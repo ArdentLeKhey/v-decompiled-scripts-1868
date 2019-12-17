@@ -5246,7 +5246,7 @@ void func_164(var uParam0)
 		}
 		if (func_37(iLocal_43))
 		{
-			VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_43, 5, 0, 0);
+			VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_43, 5, 0, false);
 		}
 		uParam0->f_8 = uParam0->f_7;
 		uParam0->f_7 = 9;

@@ -209,10 +209,10 @@ void func_1()
 				{
 					if (NETWORK::NETWORK_HAS_CONTROL_OF_DOOR(Local_63.f_6) && (Local_63.f_7 == 0 || (Local_63.f_7 != 0 && NETWORK::NETWORK_HAS_CONTROL_OF_DOOR(Local_63.f_7))))
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_6, 1, 1, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_6, 1, true, false);
 						if (Local_63.f_7 != 0)
 						{
-							OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_7, 1, 1, 0);
+							OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_7, 1, true, false);
 						}
 						vLocal_70.f_2[iVar0 /*12*/].f_4 = 1;
 					}
@@ -230,10 +230,10 @@ void func_1()
 			{
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_DOOR(Local_63.f_6) && (Local_63.f_7 == 0 || (Local_63.f_7 != 0 && NETWORK::NETWORK_HAS_CONTROL_OF_DOOR(Local_63.f_7))))
 				{
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_6, 0, 1, 0);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_6, 0, true, false);
 					if (Local_63.f_7 != 0)
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_7, 0, 1, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_63.f_7, 0, true, false);
 					}
 					vLocal_70.f_2[iVar0 /*12*/].f_4 = 0;
 				}

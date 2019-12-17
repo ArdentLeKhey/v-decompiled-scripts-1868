@@ -586,8 +586,8 @@ void __EntryFunction__()
 					{
 						func_116();
 					}
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[9 /*31*/], 0, 0, 1);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[10 /*31*/], 0, 0, 1);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[9 /*31*/], 0, false, true);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[10 /*31*/], 0, false, true);
 					break;
 				
 				case 4:
@@ -3688,7 +3688,7 @@ void func_116()
 					WEAPON::HIDE_PED_WEAPON_FOR_SCRIPTED_CUTSCENE(PLAYER::PLAYER_PED_ID(), false);
 					ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), -1173.531f, 4924.357f, 222.2101f, 1, false, 0, 1);
 					ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), 188.9369f);
-					TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(PLAYER::PLAYER_PED_ID(), -1173.509f, 4924.365f, 222.21f, -1, false, 0f, true, 0, iLocal_108, 0);
+					TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(PLAYER::PLAYER_PED_ID(), -1173.509f, 4924.365f, 222.21f, -1, false, 0f, true, false, iLocal_108, 0);
 					PED::_0x2208438012482A1A(PLAYER::PLAYER_PED_ID(), 1, 0);
 				}
 				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY("Trevors_weapon", 0))
@@ -5650,8 +5650,8 @@ void func_157()
 	}
 	if (fLocal_87 >= 0f)
 	{
-		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[10 /*31*/], fLocal_87, 0, 1);
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[10 /*31*/], 4, 0, 1);
+		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[10 /*31*/], fLocal_87, false, true);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[10 /*31*/], 4, false, true);
 	}
 	if (fLocal_86 < 0f)
 	{
@@ -5663,8 +5663,8 @@ void func_157()
 	}
 	if (fLocal_86 <= 0f)
 	{
-		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[9 /*31*/], fLocal_86, 0, 1);
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[9 /*31*/], 4, 0, 1);
+		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[9 /*31*/], fLocal_86, false, true);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[9 /*31*/], 4, false, true);
 	}
 }
 
@@ -5680,8 +5680,8 @@ void func_158()
 	}
 	if (fLocal_87 <= 1f)
 	{
-		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[10 /*31*/], fLocal_87, 0, 1);
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[10 /*31*/], 4, 0, 1);
+		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[10 /*31*/], fLocal_87, false, true);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[10 /*31*/], 4, false, true);
 	}
 	if (fLocal_86 > -1f)
 	{
@@ -5693,8 +5693,8 @@ void func_158()
 	}
 	if (fLocal_86 >= -1f)
 	{
-		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[9 /*31*/], fLocal_86, 0, 1);
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[9 /*31*/], 4, 0, 1);
+		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[9 /*31*/], fLocal_86, false, true);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[9 /*31*/], 4, false, true);
 	}
 }
 

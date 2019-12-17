@@ -10961,7 +10961,7 @@ void func_236(char* sParam0, int iParam1, bool bParam2, int iParam3, float fPara
 	}
 	else if ((fParam4 != 0f || fParam5 != 0f) || fParam6 != 0f)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(*iParam1, sParam0, fParam4, fParam5, fParam6, iParam7, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(*iParam1, sParam0, fParam4, fParam5, fParam6, iParam7, false, 0, 0);
 	}
 	else
 	{

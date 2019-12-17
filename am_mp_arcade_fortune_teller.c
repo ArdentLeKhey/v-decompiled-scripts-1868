@@ -678,12 +678,12 @@ void func_21()
 					TASK::STOP_ANIM_PLAYBACK(Local_237.f_64, 0, 1);
 					func_23(6);
 				}
-				if (ENTITY::PLAY_ENTITY_ANIM(Local_237.f_64, "prop_body_loop_outro", func_7(Local_237.f_10), 0.125f, false, 0, 0, 0f, 0))
+				if (ENTITY::PLAY_ENTITY_ANIM(Local_237.f_64, "prop_body_loop_outro", func_7(Local_237.f_10), 0.125f, false, false, 0, 0f, 0))
 				{
 					if (func_22(PLAYER::PLAYER_ID(), Local_237.f_64))
 					{
 						Local_237.f_8 = AUDIO::GET_SOUND_ID();
-						AUDIO::PLAY_SOUND_FROM_COORD(Local_237.f_8, "fortune_bell", ENTITY::GET_ENTITY_COORDS(Local_237.f_64, true), "dlc_ch_nazar_speaks_sounds", 0, 0, 0);
+						AUDIO::PLAY_SOUND_FROM_COORD(Local_237.f_8, "fortune_bell", ENTITY::GET_ENTITY_COORDS(Local_237.f_64, true), "dlc_ch_nazar_speaks_sounds", false, 0, 0);
 					}
 					func_9(6);
 					func_6(5);
@@ -1216,12 +1216,12 @@ void func_38()
 {
 	if (func_25())
 	{
-		if (ENTITY::PLAY_ENTITY_ANIM(Local_237.f_64, "prop_body_loop_intro", func_7(Local_237.f_10), 0.125f, false, 0, 0, 0f, 0))
+		if (ENTITY::PLAY_ENTITY_ANIM(Local_237.f_64, "prop_body_loop_intro", func_7(Local_237.f_10), 0.125f, false, false, 0, 0f, 0))
 		{
 			if (func_22(PLAYER::PLAYER_ID(), Local_237.f_64))
 			{
 				Local_237.f_7 = AUDIO::GET_SOUND_ID();
-				AUDIO::PLAY_SOUND_FROM_COORD(Local_237.f_7, "fortune_mech_loop", ENTITY::GET_ENTITY_COORDS(Local_237.f_64, true), "dlc_ch_nazar_speaks_sounds", 0, 0, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(Local_237.f_7, "fortune_mech_loop", ENTITY::GET_ENTITY_COORDS(Local_237.f_64, true), "dlc_ch_nazar_speaks_sounds", false, 0, 0);
 			}
 			func_6(2);
 		}

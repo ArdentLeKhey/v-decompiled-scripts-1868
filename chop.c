@@ -3465,7 +3465,7 @@ void func_54()
 			{
 				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 				{
-					VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, 0);
+					VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, false);
 				}
 				iLocal_383 = MISC::GET_GAME_TIMER();
 				iLocal_65 = MISC::GET_GAME_TIMER();
@@ -3485,7 +3485,7 @@ void func_54()
 				{
 					if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94) && VEHICLE::GET_VEHICLE_DOOR_ANGLE_RATIO(iLocal_78, iLocal_94) < 0.95f)
 					{
-						VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, 0);
+						VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, false);
 						iLocal_383 = MISC::GET_GAME_TIMER();
 					}
 					if (func_76() && MISC::GET_GAME_TIMER() >= iLocal_383 + 300)
@@ -3593,7 +3593,7 @@ void func_54()
 					{
 						if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 						{
-							VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, 0);
+							VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, false);
 						}
 						iLocal_86 = 12;
 					}
@@ -3688,7 +3688,7 @@ void func_54()
 			{
 				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 				{
-					VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, 0);
+					VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, false);
 				}
 				iLocal_86 = 12;
 			}
@@ -4041,7 +4041,7 @@ void func_68(vector3 vParam0, int iParam1)
 		{
 			if ((iParam1 == 1 && !VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94)) && VEHICLE::GET_VEHICLE_DOOR_ANGLE_RATIO(iLocal_78, 1) < 0.9f)
 			{
-				VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, 0);
+				VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, false);
 			}
 			if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_87))
 			{
@@ -9427,7 +9427,7 @@ void func_180()
 							{
 								if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(iLocal_78, iLocal_94))
 								{
-									VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, 0);
+									VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_78, iLocal_94, 0, false);
 								}
 								STREAMING::REQUEST_ANIM_DICT(sLocal_371);
 								while (!STREAMING::HAS_ANIM_DICT_LOADED(sLocal_371))

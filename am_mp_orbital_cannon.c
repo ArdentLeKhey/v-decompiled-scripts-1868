@@ -2793,7 +2793,7 @@ void func_70(vector3 vParam0)
 		GRAPHICS::START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD("scr_xm_orbital_blast", vParam0, vVar1, 1065353216, 0, 0, 0, 1);
 		if (!Global_1694267)
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DLC_XM_Explosions_Orbital_Cannon", vParam0, 0, 1, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DLC_XM_Explosions_Orbital_Cannon", vParam0, 0, true, 0, 0);
 		}
 	}
 }

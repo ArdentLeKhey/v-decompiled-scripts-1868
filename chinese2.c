@@ -13684,7 +13684,7 @@ void func_166(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 				
 				case 36:
 					func_15("CHN2_EXIT_HOUSE", 0, "CHN2_EXPLODE");
-					AUDIO::PLAY_SOUND_FROM_COORD(iLocal_171, "FarmhouseFire_Ignite", vLocal_172, "CHINESE2_SOUNDS", 0, 0, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(iLocal_171, "FarmhouseFire_Ignite", vLocal_172, "CHINESE2_SOUNDS", false, 0, 0);
 					Local_385[iParam0 /*10*/].f_3 = 1;
 					break;
 				

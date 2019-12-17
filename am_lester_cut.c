@@ -4909,7 +4909,7 @@ int func_138()
 				{
 					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(208246292))
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(208246292, 0, 0, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(208246292, 0, false, false);
 						MISC::SET_BIT(&iLocal_353, 17);
 					}
 				}
@@ -4999,7 +4999,7 @@ int func_138()
 		case 99:
 			if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(208246292))
 			{
-				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(208246292, 4, 0, 0);
+				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(208246292, 4, false, false);
 				MISC::SET_BIT(&iLocal_353, 19);
 				iLocal_360 = 100;
 			}
@@ -6464,14 +6464,14 @@ void func_212(var uParam0)
 		if (HUD::DOES_BLIP_EXIST(*uParam0) && !HUD::IS_BLIP_SHORT_RANGE(*uParam0))
 		{
 			HUD::SET_BLIP_AS_SHORT_RANGE(*uParam0, true);
-			HUD::_0xB552929B85FC27EC(*uParam0, 0);
+			HUD::_0xB552929B85FC27EC(*uParam0, false);
 			HUD::SET_BLIP_PRIORITY(*uParam0, 5);
 		}
 	}
 	else if (HUD::DOES_BLIP_EXIST(*uParam0) && (HUD::IS_BLIP_SHORT_RANGE(*uParam0) && !func_213()))
 	{
 		HUD::SET_BLIP_AS_SHORT_RANGE(*uParam0, false);
-		HUD::_0xB552929B85FC27EC(*uParam0, 1);
+		HUD::_0xB552929B85FC27EC(*uParam0, true);
 	}
 }
 
@@ -6534,7 +6534,7 @@ void func_217()
 	{
 		if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(208246292))
 		{
-			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(208246292, 4, 0, 0);
+			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(208246292, 4, false, false);
 		}
 	}
 	if (MISC::IS_BIT_SET(iLocal_353, 19))

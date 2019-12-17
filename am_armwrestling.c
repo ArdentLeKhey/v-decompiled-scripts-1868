@@ -2376,7 +2376,7 @@ void __EntryFunction__()
 								func_1039(&Var6, 7, 0);
 								if (Global_1312448 != 0)
 								{
-									AUDIO::PLAY_SOUND_FROM_COORD(-1, func_915(iVar46, bVar60), func_914(&vVar2), 0, 0, 0, 0);
+									AUDIO::PLAY_SOUND_FROM_COORD(-1, func_915(iVar46, bVar60), func_914(&vVar2), 0, false, 0, 0);
 								}
 								func_913(&Var6, 0.5f);
 								if (!ENTITY::IS_ENTITY_DEAD(Var3[1 /*21*/].f_18, 0) && !PED::IS_PED_INJURED(Var3[0 /*21*/].f_18))
@@ -3326,7 +3326,7 @@ void __EntryFunction__()
 								func_1039(&Var6, 7, 0);
 								if (Global_1312448 != 0)
 								{
-									AUDIO::PLAY_SOUND_FROM_COORD(-1, func_915(iVar46, bVar60), func_914(&vVar2), 0, 0, 0, 0);
+									AUDIO::PLAY_SOUND_FROM_COORD(-1, func_915(iVar46, bVar60), func_914(&vVar2), 0, false, 0, 0);
 								}
 								func_913(&Var6, 0.5f);
 								if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), 0) && !PED::IS_PED_INJURED(Var3[iLocal_318 /*21*/].f_18))

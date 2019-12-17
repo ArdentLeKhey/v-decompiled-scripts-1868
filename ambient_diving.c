@@ -2356,11 +2356,11 @@ void func_64()
 					iLocal_61 = 0;
 					if (func_63())
 					{
-						AUDIO::PLAY_SOUND_FROM_COORD(iLocal_63, "SINGLE_BLIP_FROM_BOAT", vVar1, "ABIGAIL_SONAR_SOUNDSET", 0, 0, 0);
+						AUDIO::PLAY_SOUND_FROM_COORD(iLocal_63, "SINGLE_BLIP_FROM_BOAT", vVar1, "ABIGAIL_SONAR_SOUNDSET", false, 0, 0);
 					}
 					else
 					{
-						AUDIO::PLAY_SOUND_FROM_COORD(iLocal_63, "SCRIPT_TRIGGERED_FROM_PROP", vVar0, "ABIGAIL_SONAR_SOUNDSET", 0, 0, 0);
+						AUDIO::PLAY_SOUND_FROM_COORD(iLocal_63, "SCRIPT_TRIGGERED_FROM_PROP", vVar0, "ABIGAIL_SONAR_SOUNDSET", false, 0, 0);
 					}
 				}
 				else

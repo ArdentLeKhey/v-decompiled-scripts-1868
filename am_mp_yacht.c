@@ -6833,7 +6833,7 @@ void func_95()
 						break;
 				}
 				GRAPHICS::USE_PARTICLE_FX_ASSET("scr_apartment_mp");
-				Local_311.f_7 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_apa_jacuzzi_wade", vVar16, 0f, 0f, 0f, fVar17, 0, 0, 0, 1);
+				Local_311.f_7 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_apa_jacuzzi_wade", vVar16, 0f, 0f, 0f, fVar17, 0, 0, 0, true);
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(Local_311.f_7, "size", 1f, 1);
 				Local_311.f_13 = NETWORK::GET_NETWORK_TIME();
 				MISC::SET_BIT(&Local_311, 5);
@@ -6925,7 +6925,7 @@ void func_99(var uParam0)
 		if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED("scr_apartment_mp"))
 		{
 			GRAPHICS::USE_PARTICLE_FX_ASSET("scr_apartment_mp");
-			Local_311.f_6 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_apa_jacuzzi_wade", *uParam0, 0f, 0f, 0f, 1f, 0, 0, 0, 1);
+			Local_311.f_6 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_apa_jacuzzi_wade", *uParam0, 0f, 0f, 0f, 1f, 0, 0, 0, true);
 			MISC::SET_BIT(&Local_311, 1);
 		}
 	}
@@ -7000,14 +7000,14 @@ void func_104()
 		vVar2 = { func_105(iLocal_629, -0.0944f, 28.8718f, -2.3929f) };
 		vVar3 = { func_105(iLocal_629, -0.15f, -52.47f, -5.82f) };
 		vVar4 = { vVar3.x, vVar3.y, fLocal_275 };
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_2, "Engine", vVar0, "DLC_Apt_Yacht_Ambient_Soundset", 0, 0, 1);
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_3, "Deck", vVar1, "DLC_Apt_Yacht_Ambient_Soundset", 0, 0, 1);
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_4, "Deck", vVar2, "DLC_Apt_Yacht_Ambient_Soundset", 0, 0, 1);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_2, "Engine", vVar0, "DLC_Apt_Yacht_Ambient_Soundset", false, 0, 1);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_3, "Deck", vVar1, "DLC_Apt_Yacht_Ambient_Soundset", false, 0, 1);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_4, "Deck", vVar2, "DLC_Apt_Yacht_Ambient_Soundset", false, 0, 1);
 		if (func_102(iLocal_629))
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_1, "Hot_Tub_Loop", vVar4, "GTAO_Yacht_SoundSet", 0, 0, 1);
+			AUDIO::PLAY_SOUND_FROM_COORD(Local_311.f_1, "Hot_Tub_Loop", vVar4, "GTAO_Yacht_SoundSet", false, 0, 1);
 			GRAPHICS::USE_PARTICLE_FX_ASSET("scr_apartment_mp");
-			Local_311.f_5 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_apa_jacuzzi_steam", vVar3, 0f, 0f, 0f, 1f, 0, 0, 0, 1);
+			Local_311.f_5 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_apa_jacuzzi_steam", vVar3, 0f, 0f, 0f, 1f, 0, 0, 0, true);
 		}
 		MISC::SET_BIT(&Local_311, 0);
 	}

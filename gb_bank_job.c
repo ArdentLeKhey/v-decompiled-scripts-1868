@@ -95922,7 +95922,7 @@ void func_806(bool bParam0)
 				{
 					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(iVar0))
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, false);
 					}
 				}
 				else
@@ -95934,7 +95934,7 @@ void func_806(bool bParam0)
 				{
 					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(iVar0))
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, false);
 					}
 				}
 				else
@@ -95946,7 +95946,7 @@ void func_806(bool bParam0)
 				{
 					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(iVar0))
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, false);
 					}
 				}
 				else
@@ -95958,7 +95958,7 @@ void func_806(bool bParam0)
 				{
 					if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(iVar0))
 					{
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, 0);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iVar0, 4, false, false);
 					}
 				}
 				else
@@ -98678,12 +98678,12 @@ int func_817(int iParam0, bool bParam1)
 			{
 				if (bParam1)
 				{
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 0, false, 0);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 0, false, false);
 					return 1;
 				}
 				else
 				{
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 4, false, 0);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 4, false, false);
 					if (OBJECT::DOOR_SYSTEM_GET_OPEN_RATIO(iParam0) <= 0.01f)
 					{
 						return 1;
@@ -98693,12 +98693,12 @@ int func_817(int iParam0, bool bParam1)
 		}
 		else if (bParam1)
 		{
-			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 0, false, 0);
+			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 0, false, false);
 			return 1;
 		}
 		else
 		{
-			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 4, false, 0);
+			OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 4, false, false);
 			if (OBJECT::DOOR_SYSTEM_GET_OPEN_RATIO(iParam0) <= 0.01f)
 			{
 				return 1;
@@ -106033,7 +106033,7 @@ void func_1025()
 	if (!HUD::DOES_BLIP_EXIST(iLocal_249))
 	{
 		iLocal_249 = HUD::ADD_BLIP_FOR_COORD(vVar0);
-		HUD::_0xB552929B85FC27EC(iLocal_249, 1);
+		HUD::_0xB552929B85FC27EC(iLocal_249, true);
 		HUD::SET_BLIP_PRIORITY(iLocal_249, 11);
 	}
 	else

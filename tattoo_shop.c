@@ -79196,183 +79196,183 @@ int func_488(int iParam0, struct<4> Param1)
 		}
 		switch (MISC::GET_HASH_KEY(&Param1))
 		{
-			case 1609241856:
+			case joaat("TAT_H3_000"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28033) * Global_262145.f_14500));
 				break;
 			
-			case 451840780:
+			case joaat("TAT_H3_001"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28034) * Global_262145.f_14500));
 				break;
 			
-			case 758722465:
+			case joaat("TAT_H3_002"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28035) * Global_262145.f_14500));
 				break;
 			
-			case -726401392:
+			case joaat("TAT_H3_003"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28036) * Global_262145.f_14500));
 				break;
 			
-			case -1759083658:
+			case joaat("TAT_H3_004"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28037) * Global_262145.f_14500));
 				break;
 			
-			case 1914059094:
+			case joaat("TAT_H3_005"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28038) * Global_262145.f_14500));
 				break;
 			
-			case -1001038381:
+			case joaat("TAT_H3_006"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28039) * Global_262145.f_14500));
 				break;
 			
-			case 198274254:
+			case joaat("TAT_H3_007"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28040) * Global_262145.f_14500));
 				break;
 			
-			case -299355780:
+			case joaat("TAT_H3_008"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28041) * Global_262145.f_14500));
 				break;
 			
-			case -1455675487:
+			case joaat("TAT_H3_009"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28042) * Global_262145.f_14500));
 				break;
 			
-			case 1146609334:
+			case joaat("TAT_H3_010"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28043) * Global_262145.f_14500));
 				break;
 			
-			case -345199391:
+			case joaat("TAT_H3_011"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28044) * Global_262145.f_14500));
 				break;
 			
-			case -522676295:
+			case joaat("TAT_H3_012"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28045) * Global_262145.f_14500));
 				break;
 			
-			case 2009875866:
+			case joaat("TAT_H3_013"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28046) * Global_262145.f_14500));
 				break;
 			
-			case 1762994220:
+			case joaat("TAT_H3_014"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28047) * Global_262145.f_14500));
 				break;
 			
-			case 877149847:
+			case joaat("TAT_H3_015"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28048) * Global_262145.f_14500));
 				break;
 			
-			case -2053316293:
+			case joaat("TAT_H3_016"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28049) * Global_262145.f_14500));
 				break;
 			
-			case -1060513900:
+			case joaat("TAT_H3_017"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28050) * Global_262145.f_14500));
 				break;
 			
-			case -1308050926:
+			case joaat("TAT_H3_018"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28051) * Global_262145.f_14500));
 				break;
 			
-			case 1500350685:
+			case joaat("TAT_H3_019"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28052) * Global_262145.f_14500));
 				break;
 			
-			case 1589746029:
+			case joaat("TAT_H3_020"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28053) * Global_262145.f_14500));
 				break;
 			
-			case 1895579106:
+			case joaat("TAT_H3_021"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28054) * Global_262145.f_14500));
 				break;
 			
-			case -985930144:
+			case joaat("TAT_H3_022"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28055) * Global_262145.f_14500));
 				break;
 			
-			case 1168008999:
+			case joaat("TAT_H3_023"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28056) * Global_262145.f_14500));
 				break;
 			
-			case 390859395:
+			case joaat("TAT_H3_024"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28057) * Global_262145.f_14500));
 				break;
 			
-			case 674802780:
+			case joaat("TAT_H3_025"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28058) * Global_262145.f_14500));
 				break;
 			
-			case 2077250442:
+			case joaat("TAT_H3_026"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28059) * Global_262145.f_14500));
 				break;
 			
-			case -90910443:
+			case joaat("TAT_H3_027"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28060) * Global_262145.f_14500));
 				break;
 			
-			case 205943928:
+			case joaat("TAT_H3_028"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28061) * Global_262145.f_14500));
 				break;
 			
-			case -517923282:
+			case joaat("TAT_H3_029"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28062) * Global_262145.f_14500));
 				break;
 			
-			case -1431096921:
+			case joaat("TAT_H3_030"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28063) * Global_262145.f_14500));
 				break;
 			
-			case 2146491427:
+			case joaat("TAT_H3_031"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28064) * Global_262145.f_14500));
 				break;
 			
-			case 1434486595:
+			case joaat("TAT_H3_032"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28065) * Global_262145.f_14500));
 				break;
 			
-			case -1188344157:
+			case joaat("TAT_H3_033"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28066) * Global_262145.f_14500));
 				break;
 			
-			case -939627447:
+			case joaat("TAT_H3_034"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28067) * Global_262145.f_14500));
 				break;
 			
-			case -1774221108:
+			case joaat("TAT_H3_035"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28068) * Global_262145.f_14500));
 				break;
 			
-			case -1401834192:
+			case joaat("TAT_H3_036"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28069) * Global_262145.f_14500));
 				break;
 			
-			case 818593240:
+			case joaat("TAT_H3_037"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28070) * Global_262145.f_14500));
 				break;
 			
-			case -13903205:
+			case joaat("TAT_H3_038"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28071) * Global_262145.f_14500));
 				break;
 			
-			case -722827751:
+			case joaat("TAT_H3_039"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28072) * Global_262145.f_14500));
 				break;
 			
-			case 1110203907:
+			case joaat("TAT_H3_040"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28073) * Global_262145.f_14500));
 				break;
 			
-			case 834583848:
+			case joaat("TAT_H3_041"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28074) * Global_262145.f_14500));
 				break;
 			
-			case 527243397:
+			case joaat("TAT_H3_042"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28075) * Global_262145.f_14500));
 				break;
 			
-			case 86696961:
+			case joaat("TAT_H3_043"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28076) * Global_262145.f_14500));
 				break;
 			
-			case -186629268:
+			case joaat("TAT_H3_044"):
 				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_28077) * Global_262145.f_14500));
 				break;
 		}

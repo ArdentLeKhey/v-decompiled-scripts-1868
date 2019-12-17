@@ -327,7 +327,7 @@ void func_2(int iParam0, int iParam1, int iParam2)
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_DOOR(iParam1))
 				{
 					MISC::SET_BIT(&(iLocal_94[iParam0]), iVar0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam1, iParam2, 1, 1);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam1, iParam2, true, true);
 					func_34(&(Local_95[iParam0 /*2*/]), 1, 0);
 				}
 				else
@@ -341,7 +341,7 @@ void func_2(int iParam0, int iParam1, int iParam2)
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_DOOR(iParam1))
 			{
 				MISC::SET_BIT(&(iLocal_94[iParam0]), iVar0);
-				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam1, iParam2, 1, 1);
+				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam1, iParam2, true, true);
 				func_34(&(Local_95[iParam0 /*2*/]), 1, 0);
 			}
 			else
@@ -593,8 +593,8 @@ void func_14()
 						fLocal_97[iVar0] = 1f;
 					}
 					AUDIO::SET_SCRIPT_UPDATE_DOOR_AUDIO(Var3, 1);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Var3, fLocal_97[iVar0], 0, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Var3, 0, 0, 1);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Var3, fLocal_97[iVar0], false, false);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Var3, 0, false, true);
 				}
 			}
 			else if (fLocal_97[iVar0] != 0f)
@@ -605,8 +605,8 @@ void func_14()
 					fLocal_97[iVar0] = 0f;
 				}
 				AUDIO::SET_SCRIPT_UPDATE_DOOR_AUDIO(Var3, 1);
-				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Var3, fLocal_97[iVar0], 0, 0);
-				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Var3, 1, 0, 1);
+				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Var3, fLocal_97[iVar0], false, false);
+				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Var3, 1, false, true);
 			}
 		}
 		iVar0++;
@@ -3690,24 +3690,24 @@ int func_29(int iParam0, int iParam1)
 	return 1;
 }
 
-void func_30(struct<15> Param0, int iParam1)
+void func_30(struct<15> Param0, bool bParam1)
 {
 	if (Param0 != 0)
 	{
-		OBJECT::ADD_DOOR_TO_SYSTEM(Param0, Param0.f_2, Param0.f_3, 0, iParam1, Param0.f_11);
+		OBJECT::ADD_DOOR_TO_SYSTEM(Param0, Param0.f_2, Param0.f_3, 0, bParam1, Param0.f_11);
 		if (Param0.f_9)
 		{
 			OBJECT::DOOR_SYSTEM_SET_HOLD_OPEN(Param0, 1);
 		}
 		if (Param0.f_12 != 0f)
 		{
-			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Param0, Param0.f_12, 0, iParam1);
+			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Param0, Param0.f_12, false, bParam1);
 		}
 		if (!Param0.f_6)
 		{
 			if (Param0.f_7)
 			{
-				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Param0, Param0.f_8, iParam1, 0);
+				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Param0, Param0.f_8, bParam1, false);
 			}
 		}
 		if (Param0.f_10)
@@ -3716,11 +3716,11 @@ void func_30(struct<15> Param0, int iParam1)
 		}
 		if (Param0.f_14 != 0f)
 		{
-			OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(Param0, Param0.f_14, iParam1, 0);
+			OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(Param0, Param0.f_14, bParam1, 0);
 		}
 		if (Param0.f_13 != 0f)
 		{
-			OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_DISTANCE(Param0, Param0.f_13, iParam1, 0);
+			OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_DISTANCE(Param0, Param0.f_13, bParam1, 0);
 		}
 	}
 }

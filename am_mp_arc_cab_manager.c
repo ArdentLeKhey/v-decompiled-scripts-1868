@@ -80500,11 +80500,11 @@ void func_352(int iParam0, var uParam1)
 {
 	if (MISC::IS_BIT_SET(*iParam0, 8))
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_412(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_412(), 1000f, true, false, 0, 0f, 262144);
 	}
 	else
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_413(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_413(), 1000f, true, false, 0, 0f, 262144);
 	}
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ((*uParam1)[1]));
 }
@@ -81092,7 +81092,7 @@ void func_377(var uParam0, float fParam1)
 	{
 		if (!ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), sVar0, "drill_straight_idle_drill_bit", 3))
 		{
-			ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), "drill_straight_idle_drill_bit", sVar0, 1000f, true, 0, 0, 0f, 0);
+			ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), "drill_straight_idle_drill_bit", sVar0, 1000f, true, false, 0, 0f, 0);
 		}
 		else
 		{
@@ -81534,11 +81534,11 @@ void func_397(int iParam0, var uParam1, int iParam2)
 	}
 	if (MISC::IS_BIT_SET(*iParam0, 8))
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_412(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_412(), 1000f, true, false, 0, 0f, 262144);
 	}
 	else
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_413(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_413(), 1000f, true, false, 0, 0f, 262144);
 	}
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ((*uParam1)[1]));
 }
@@ -86079,7 +86079,7 @@ void func_497(var uParam0, int iParam1, int iParam2, int iParam3)
 					vVar3 = { ENTITY::GET_ENTITY_COORDS(Global_1696470[iParam3], true) };
 					vVar2.z = (vVar3.z + 0.0225f);
 					vVar4 = { ENTITY::GET_ENTITY_ROTATION(iParam1, 2) + Vector(0f, 0f, 90f) };
-					uParam0->f_80[iParam3] = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_ch_finale_laser_sparks", vVar2, vVar4, 1065353216, 0, 0, 0, 1);
+					uParam0->f_80[iParam3] = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_ch_finale_laser_sparks", vVar2, vVar4, 1065353216, 0, 0, 0, true);
 					GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam0->f_80[iParam3], "power", 0f, 0);
 					bVar0 = false;
 				}
@@ -86091,7 +86091,7 @@ void func_497(var uParam0, int iParam1, int iParam2, int iParam3)
 				vVar6 = { ENTITY::GET_ENTITY_COORDS(Global_1696470[iParam3], true) };
 				vVar5.z = (vVar6.z + 0.0225f);
 				vVar7 = { ENTITY::GET_ENTITY_ROTATION(iParam1, 2) + Vector(0f, 0f, 90f) };
-				uParam0->f_80[iParam3] = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_ch_finale_drill_sparks", vVar5, vVar7, 1065353216, 0, 0, 0, 1);
+				uParam0->f_80[iParam3] = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_ch_finale_drill_sparks", vVar5, vVar7, 1065353216, 0, 0, 0, true);
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam0->f_80[iParam3], "power", 0f, 0);
 				bVar0 = false;
 			}
@@ -86102,7 +86102,7 @@ void func_497(var uParam0, int iParam1, int iParam2, int iParam3)
 				vVar9 = { ENTITY::GET_ENTITY_COORDS(Global_1696470[iParam3], true) };
 				vVar8.z = (vVar9.z + 0.0225f);
 				vVar10 = { ENTITY::GET_ENTITY_ROTATION(iParam1, 2) + Vector(0f, 0f, 90f) };
-				uParam0->f_113[iParam3] = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_ch_finale_drill_overheat", vVar8, vVar10, 1065353216, 0, 0, 0, 1);
+				uParam0->f_113[iParam3] = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_ch_finale_drill_overheat", vVar8, vVar10, 1065353216, 0, 0, 0, true);
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam0->f_113[iParam3], "heat", 0f, 0);
 				bVar0 = false;
 			}
@@ -94722,7 +94722,7 @@ void func_677(bool bParam0)
 		if (Local_209.f_49[Local_209.f_44] == -1 && !MISC::IS_STRING_NULL_OR_EMPTY(&uVar1))
 		{
 			Local_209.f_49[Local_209.f_44] = AUDIO::GET_SOUND_ID();
-			AUDIO::PLAY_SOUND_FROM_COORD(Local_209.f_49[Local_209.f_44], &uVar1, Local_209.f_196[Local_209.f_44 /*3*/], &uVar0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(Local_209.f_49[Local_209.f_44], &uVar1, Local_209.f_196[Local_209.f_44 /*3*/], &uVar0, false, 0, 0);
 		}
 	}
 	else
@@ -94742,7 +94742,7 @@ void func_677(bool bParam0)
 				if (Local_209.f_91[Local_209.f_44] == -1)
 				{
 					Local_209.f_91[Local_209.f_44] = AUDIO::GET_SOUND_ID();
-					AUDIO::PLAY_SOUND_FROM_COORD(Local_209.f_91[Local_209.f_44], &uVar1, Local_209.f_196[Local_209.f_44 /*3*/], &uVar0, 0, 20, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(Local_209.f_91[Local_209.f_44], &uVar1, Local_209.f_196[Local_209.f_44 /*3*/], &uVar0, false, 20, 0);
 				}
 				else if (AUDIO::HAS_SOUND_FINISHED(Local_209.f_91[Local_209.f_44]))
 				{
@@ -96106,7 +96106,7 @@ void func_729()
 					if (Local_209.f_91[iVar2] == -1)
 					{
 						Local_209.f_91[iVar2] = AUDIO::GET_SOUND_ID();
-						AUDIO::PLAY_SOUND_FROM_COORD(Local_209.f_91[iVar2], &uVar1, Local_209.f_196[iVar2 /*3*/], &uVar0, 0, 20, 0);
+						AUDIO::PLAY_SOUND_FROM_COORD(Local_209.f_91[iVar2], &uVar1, Local_209.f_196[iVar2 /*3*/], &uVar0, false, 20, 0);
 					}
 					else if (AUDIO::HAS_SOUND_FINISHED(Local_209.f_91[iVar2]))
 					{
@@ -100898,7 +100898,7 @@ void func_918()
 				{
 					if (!func_683(5))
 					{
-						AUDIO::PLAY_SOUND_FROM_COORD(-1, "Kick_Machine", Local_209.f_196[iVar1 /*3*/], "DLC_H3_Arc_Mac_Degen_DotF_Sounds", 1, 20, 0);
+						AUDIO::PLAY_SOUND_FROM_COORD(-1, "Kick_Machine", Local_209.f_196[iVar1 /*3*/], "DLC_H3_Arc_Mac_Degen_DotF_Sounds", true, 20, 0);
 						func_682(5);
 					}
 				}

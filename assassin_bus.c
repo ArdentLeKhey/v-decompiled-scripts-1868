@@ -15107,9 +15107,9 @@ void func_298(int iParam0)
 	{
 		if (!bLocal_1399)
 		{
-			VEHICLE::SET_VEHICLE_DOOR_OPEN(iParam0, 1, 0, 0);
+			VEHICLE::SET_VEHICLE_DOOR_OPEN(iParam0, 1, 0, false);
 		}
-		VEHICLE::SET_VEHICLE_DOOR_OPEN(iParam0, 0, 0, 0);
+		VEHICLE::SET_VEHICLE_DOOR_OPEN(iParam0, 0, 0, false);
 	}
 }
 

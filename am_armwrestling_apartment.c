@@ -2228,7 +2228,7 @@ void __EntryFunction__()
 								bVar60 = false;
 								if (!iLocal_320)
 								{
-									AUDIO::PLAY_SOUND_FROM_COORD(-1, "ARM_WRESTLING_ARM_IMPACT_MASTER", vVar41, 0, 0, 0, 0);
+									AUDIO::PLAY_SOUND_FROM_COORD(-1, "ARM_WRESTLING_ARM_IMPACT_MASTER", vVar41, 0, false, 0, 0);
 									iLocal_320 = 1;
 								}
 								bVar56 = !MISC::IS_BIT_SET(iVar5, 3);
@@ -3038,7 +3038,7 @@ void __EntryFunction__()
 									func_747(&Var12, 7, 0);
 									if (Global_1312448 != 0)
 									{
-										AUDIO::PLAY_SOUND_FROM_COORD(-1, func_499(1, bVar56), func_498(&vVar8), 0, 0, 0, 0);
+										AUDIO::PLAY_SOUND_FROM_COORD(-1, func_499(1, bVar56), func_498(&vVar8), 0, false, 0, 0);
 									}
 									func_629(&Var12, 0.5f);
 									sVar76 = "Win";
@@ -58836,7 +58836,7 @@ void func_679(var uParam0, var uParam1, vector3 vParam2)
 		if ((fLocal_1544 - fLocal_1545) > 0.2f && (MISC::GET_GAME_TIMER() - iLocal_1543) > 750)
 		{
 			iLocal_1543 = MISC::GET_GAME_TIMER();
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "ARM_WRESTLING_WOOD_CREEK_MASTER", vParam2, 0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "ARM_WRESTLING_WOOD_CREEK_MASTER", vParam2, 0, false, 0, 0);
 		}
 		fLocal_1546 = ((fLocal_1544 - fLocal_1545) / 10.25f);
 		fLocal_1545 = (fLocal_1545 + fLocal_1546);

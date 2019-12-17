@@ -19898,7 +19898,7 @@ void func_649()
 					{
 						func_651(&(iLocal_115[iVar1]), 6);
 					}
-					HUD::_0xB552929B85FC27EC(iLocal_115[iVar1], 1);
+					HUD::_0xB552929B85FC27EC(iLocal_115[iVar1], true);
 					HUD::SET_BLIP_PRIORITY(iLocal_115[iVar1], 12);
 					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_115[iVar1], "GB_BB_B_VEH");
 					HUD::SET_BLIP_SCALE(iLocal_115[iVar1], Global_262145.f_12355);

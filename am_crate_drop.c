@@ -1447,11 +1447,11 @@ int func_51(int iParam0)
 			Local_103.f_2.f_1[iParam0 /*66*/].f_59 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY("scr_crate_drop_beacon", NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_1), 0f, 0f, 0.2f, 0f, 0f, 0f, 1065353216, 0, 0, 0, 1065353216, 1065353216, 1065353216, 0);
 			if (!MISC::IS_BIT_SET(Local_103.f_1, 11))
 			{
-				GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iParam0 /*66*/].f_59, 0.8f, 0.18f, 0.19f, 0);
+				GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iParam0 /*66*/].f_59, 0.8f, 0.18f, 0.19f, false);
 			}
 			else
 			{
-				GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iParam0 /*66*/].f_59, 1f, 0.84f, 0f, 0);
+				GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iParam0 /*66*/].f_59, 1f, 0.84f, 0f, false);
 			}
 		}
 	}
@@ -1512,7 +1512,7 @@ int func_53()
 								ENTITY::ATTACH_ENTITY_TO_ENTITY(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_2), NETWORK::NET_TO_OBJ(Local_103.f_181[iVar0 /*2*/]), 0, 0f, 0f, 0.1f, 0f, 0f, 0f, 0, 0, 0, 0, 2, 1);
 								OBJECT::SET_ACTIVATE_OBJECT_PHYSICS_AS_SOON_AS_IT_IS_UNFROZEN(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_2), 1);
 								ENTITY::_SET_ENTITY_SOMETHING(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_2), false);
-								ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_2), &(Local_103.f_2.f_1[iVar0 /*66*/].f_14), &(Local_103.f_2.f_1[iVar0 /*66*/].f_8), 1000f, false, 0, 0, 0f, 0);
+								ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_2), &(Local_103.f_2.f_1[iVar0 /*66*/].f_14), &(Local_103.f_2.f_1[iVar0 /*66*/].f_8), 1000f, false, false, 0, 0f, 0);
 								ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_2));
 								ENTITY::SET_ENTITY_NO_COLLISION_ENTITY(NETWORK::NET_TO_OBJ(Local_103.f_181[iVar0 /*2*/]), NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iVar0 /*66*/].f_1), false);
 								if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_103.f_2.f_1[iVar0 /*66*/].f_2))
@@ -1639,7 +1639,7 @@ int func_55(int iParam0)
 							ENTITY::ATTACH_ENTITY_TO_ENTITY(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_1), 0, 0f, 0f, 0f, 0f, 0f, 0f, 0, 0, 0, 0, 2, 1);
 							OBJECT::SET_ACTIVATE_OBJECT_PHYSICS_AS_SOON_AS_IT_IS_UNFROZEN(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), 1);
 							ENTITY::_SET_ENTITY_SOMETHING(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), false);
-							ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), &(Local_103.f_2.f_1[iParam0 /*66*/].f_14), &(Local_103.f_2.f_1[iParam0 /*66*/].f_8), 1000f, false, 0, 0, 0f, 0);
+							ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), &(Local_103.f_2.f_1[iParam0 /*66*/].f_14), &(Local_103.f_2.f_1[iParam0 /*66*/].f_8), 1000f, false, false, 0, 0f, 0);
 							ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2));
 						}
 					}
@@ -1682,11 +1682,11 @@ int func_57()
 					Local_103.f_2.f_1[iVar0 /*66*/].f_58 = GRAPHICS::START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE("scr_crate_drop_flare", iLocal_114[iVar0], 0f, 0f, -0.2f, 0f, 0f, 0f, -1, 1065353216, 0, 0, 0, 1065353216, 1065353216, 1065353216, 0);
 					if (!MISC::IS_BIT_SET(Local_103.f_1, 11))
 					{
-						GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iVar0 /*66*/].f_58, 0.8f, 0.18f, 0.19f, 0);
+						GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iVar0 /*66*/].f_58, 0.8f, 0.18f, 0.19f, false);
 					}
 					else
 					{
-						GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iVar0 /*66*/].f_58, 1f, 0.84f, 0f, 0);
+						GRAPHICS::SET_PARTICLE_FX_LOOPED_COLOUR(Local_103.f_2.f_1[iVar0 /*66*/].f_58, 1f, 0.84f, 0f, false);
 					}
 				}
 			}
@@ -13095,7 +13095,7 @@ void func_187(int iParam0, vector3 vParam1)
 						{
 							if (func_189(iParam0))
 							{
-								ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), &(Local_103.f_2.f_1[iParam0 /*66*/].f_22), &(Local_103.f_2.f_1[iParam0 /*66*/].f_8), 1000f, false, 0, 0, 0f, 0);
+								ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ(Local_103.f_2.f_1[iParam0 /*66*/].f_2), &(Local_103.f_2.f_1[iParam0 /*66*/].f_22), &(Local_103.f_2.f_1[iParam0 /*66*/].f_8), 1000f, false, false, 0, 0f, 0);
 								MISC::SET_BIT(&(Local_105[NETWORK::PARTICIPANT_ID_TO_INT() /*4*/].f_1), (0 + iParam0));
 							}
 							else

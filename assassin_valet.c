@@ -7064,7 +7064,7 @@ void func_147(int iParam0)
 					if (PED::IS_PED_INJURED(iLocal_939) && !func_50(func_148(), vVar4, 0))
 					{
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD(0, vVar4, func_128(), 2f, false, 0.5f, 4f, true, 0, 0, -957453492);
-						TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, vVar4, -1, false, 0.25f, false, 0, 0, 1);
+						TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(0, vVar4, -1, false, 0.25f, false, false, 0, 1);
 					}
 					else
 					{

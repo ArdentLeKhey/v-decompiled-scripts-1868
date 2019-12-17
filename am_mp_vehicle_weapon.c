@@ -1722,7 +1722,7 @@ void func_49()
 							vVar7 = { 1f, 1f, 1f };
 							vVar8 = { vVar4 + vVar6 * vVar7 };
 							MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(vVar4, vVar8, iVar1, 1, func_53(0), PLAYER::PLAYER_PED_ID(), 1, 1, -1f, iVar2, 0, 0, Local_149.f_84[Local_149.f_31], 1, 0, true);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Fire", vVar4, "DLC_BTL_Terrobyte_Turret_Sounds", 1, 120, 1);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Fire", vVar4, "DLC_BTL_Terrobyte_Turret_Sounds", true, 120, 1);
 							Local_149.f_32++;
 							func_52(&(Local_149.f_115), 0, 0);
 						}
@@ -1763,7 +1763,7 @@ void func_49()
 				}
 				vVar15 = { vVar11 + vVar13 * vVar14 };
 				MISC::SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW(vVar10, vVar15, iVar1, 1, func_53(1), PLAYER::PLAYER_PED_ID(), 1, 1, -1f, iVar2, 0, 0, 0, 1, 0, true);
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Fire", vVar10, "DLC_BTL_Terrobyte_Turret_Sounds", 1, 120, 1);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "Fire", vVar10, "DLC_BTL_Terrobyte_Turret_Sounds", true, 120, 1);
 				MISC::SET_BIT(&(Local_149.f_5), 1);
 				Local_149.f_33 = 0;
 				func_57(&(Local_149.f_134), 0, 0);

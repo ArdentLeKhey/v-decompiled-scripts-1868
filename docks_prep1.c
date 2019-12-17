@@ -13275,7 +13275,7 @@ void func_229()
 			if (!PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_246) || PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_246) == 1f)
 			{
 				RECORDING::_0x81CBAE94390F9F89();
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "SUB_RELEASE", 1260.896f, -3006.556f, 23.4213f, "DOCKS_HEIST_PREP_1_SOUNDSET", 0, 0, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "SUB_RELEASE", 1260.896f, -3006.556f, 23.4213f, "DOCKS_HEIST_PREP_1_SOUNDSET", false, 0, 0);
 				CAM::SET_CAM_PARAMS(iLocal_293, 1249f, -3010.3f, 10.7f, 37.7f, 0f, -61.5f, 43.4f, 0, 1, 1, 2);
 				CAM::SET_CAM_PARAMS(iLocal_293, 1249f, -3010.3f, 10.7f, -20.1f, 0f, -48.2f, 43.4f, 1700, 2, 2, 2);
 				CAM::SET_CAM_SHAKE_AMPLITUDE(iLocal_293, 0.1f);
@@ -17120,13 +17120,13 @@ void func_270()
 			}
 			if (iLocal_1962[iLocal_1963] != -1)
 			{
-				AUDIO::PLAY_SOUND_FROM_COORD(iLocal_1962[iLocal_1963], "DOCKS_HEIST_PREP_1_SUB_SWING", 1260.896f, -3006.556f, 23.4213f, 0, 0, 0, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(iLocal_1962[iLocal_1963], "DOCKS_HEIST_PREP_1_SUB_SWING", 1260.896f, -3006.556f, 23.4213f, 0, false, 0, 0);
 				iLocal_1963++;
 			}
 		}
 		else if (iVar0 <= 2)
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DOCKS_HEIST_PREP_1_SUB_TILT", 1260.896f, -3006.556f, 23.4213f, 0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DOCKS_HEIST_PREP_1_SUB_TILT", 1260.896f, -3006.556f, 23.4213f, 0, false, 0, 0);
 		}
 		iLocal_247 = 0;
 		while (iLocal_247 < Local_55)
@@ -17135,7 +17135,7 @@ void func_270()
 			{
 				if (!Local_55[iLocal_247 /*5*/].f_4)
 				{
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "DOCKS_HEIST_PREP_1_CABLE_SNAP", 1260.896f, -3006.556f, 23.4213f, 0, 0, 0, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "DOCKS_HEIST_PREP_1_CABLE_SNAP", 1260.896f, -3006.556f, 23.4213f, 0, false, 0, 0);
 				}
 				Local_55[iLocal_247 /*5*/].f_4 = 1;
 			}

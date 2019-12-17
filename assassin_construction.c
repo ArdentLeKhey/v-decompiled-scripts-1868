@@ -1607,7 +1607,7 @@ void __EntryFunction__()
 			}
 			iLocal_1107 = TASK::ADD_COVER_POINT(-150.5964f, -945.8911f, 268.1318f, 231.5456f, 2, 0, 0, 0);
 			PED::_0x2208438012482A1A(iLocal_1183, 1, 0);
-			TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(iLocal_1183, vLocal_1213, -1, false, 0f, false, 0, 0, 0);
+			TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(iLocal_1183, vLocal_1213, -1, false, 0f, false, false, 0, 0);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(90f);
 			CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1065353216);
 			func_413(vLocal_1213, fLocal_1214, 1, 0);
@@ -9608,7 +9608,7 @@ void func_211(char* sParam0, int iParam1, bool bParam2, int iParam3, float fPara
 	}
 	else if ((fParam4 != 0f || fParam5 != 0f) || fParam6 != 0f)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(*iParam1, sParam0, fParam4, fParam5, fParam6, iParam7, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(*iParam1, sParam0, fParam4, fParam5, fParam6, iParam7, false, 0, 0);
 	}
 	else
 	{
@@ -18534,7 +18534,7 @@ void func_376()
 	func_240(5);
 	PLAYER::CLEAR_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID());
 	PED::_0x2208438012482A1A(iLocal_1183, 1, 0);
-	TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(iLocal_1183, vLocal_1213, -1, false, 0f, false, 0, 0, 0);
+	TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(iLocal_1183, vLocal_1213, -1, false, 0f, false, false, 0, 0);
 	func_373(0, -1, 1);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(90f);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1065353216);
@@ -18587,7 +18587,7 @@ void func_378()
 	}
 	AUDIO::TRIGGER_MUSIC_EVENT("ASS5_RESTART2");
 	PED::_0x2208438012482A1A(iLocal_1183, 1, 0);
-	TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(iLocal_1183, -182.1094f, -1004.058f, 113.1362f, -1, false, 0f, false, 0, 0, 0);
+	TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(iLocal_1183, -182.1094f, -1004.058f, 113.1362f, -1, false, 0f, false, false, 0, 0);
 	func_373(0, -1, 1);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(90f);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1065353216);

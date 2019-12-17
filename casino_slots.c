@@ -13976,55 +13976,55 @@ void func_336(int iParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 1:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "no_win", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "no_win", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 2:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "small_win", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "small_win", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 3:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "big_win", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "big_win", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 4:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "jackpot", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "jackpot", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 5:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "place_bet", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "place_bet", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 6:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "place_max_bet", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "place_max_bet", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 7:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "spinning", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "spinning", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 8:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "start_spin", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "start_spin", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 9:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "wheel_stop_clunk", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "wheel_stop_clunk", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 10:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "wheel_stop_on_prize", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "wheel_stop_on_prize", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 11:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "welcome_stinger", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "welcome_stinger", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 12:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "spin_wheel", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "spin_wheel", vVar1, iVar0, false, 20, 0);
 			break;
 		
 		case 13:
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "spin_wheel_win", vVar1, iVar0, 0, 20, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "spin_wheel_win", vVar1, iVar0, false, 20, 0);
 			break;
 	}
 }
@@ -14829,7 +14829,7 @@ void func_344()
 				func_224(iVar1, &vVar2, &fVar3);
 				vVar2 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar2, fVar3, 0f, -0.2f, 1f) };
 				iVar4 = func_178(Local_292[iVar1 /*21*/].f_17);
-				AUDIO::PLAY_SOUND_FROM_COORD(Local_316[iVar0 /*2*/].f_1, "attract_loop", vVar2, iVar4, 0, 0, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(Local_316[iVar0 /*2*/].f_1, "attract_loop", vVar2, iVar4, false, 0, 0);
 			}
 		}
 		else if (func_321(Local_316[iVar0 /*2*/]) || Local_573.f_598[Local_316[iVar0 /*2*/]] != -1)

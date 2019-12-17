@@ -102494,7 +102494,7 @@ void func_532()
 	}
 	if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_298))
 	{
-		iLocal_298 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_rcext2_cargo_smoke", 417f, 3920f, 1449f, 0f, 0f, 0f, 1065353216, 0, 0, 0, 0);
+		iLocal_298 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_rcext2_cargo_smoke", 417f, 3920f, 1449f, 0f, 0f, 0f, 1065353216, 0, 0, 0, false);
 	}
 }
 
@@ -107204,7 +107204,7 @@ void func_607()
 	VEHICLE::SET_VEHICLE_CAN_BE_VISIBLY_DAMAGED(iLocal_91, false);
 	VEHICLE::SET_VEHICLE_CAN_BREAK(iLocal_91, false);
 	ENTITY::SET_ENTITY_PROOFS(iLocal_91, true, true, true, true, true, false, 0, false);
-	VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_91, 2, 0, 0);
+	VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_91, 2, 0, false);
 	ENTITY::SET_ENTITY_LOD_DIST(iLocal_91, 10000);
 	if (!func_617())
 	{
@@ -108206,7 +108206,7 @@ void func_640()
 		VEHICLE::SET_VEHICLE_CAN_BE_VISIBLY_DAMAGED(iLocal_90, false);
 		VEHICLE::SET_VEHICLE_CAN_BREAK(iLocal_90, false);
 		ENTITY::SET_ENTITY_PROOFS(iLocal_90, true, true, true, true, true, false, 0, false);
-		VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_90, 2, 0, 0);
+		VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_90, 2, 0, false);
 		ENTITY::SET_ENTITY_LOD_DIST(iLocal_90, 10000);
 		VEHICLE::CONTROL_LANDING_GEAR(iLocal_90, 2);
 		VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(iLocal_90, 503, "Ext2_CargoTakeOff", 1);

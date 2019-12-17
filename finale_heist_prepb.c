@@ -9220,8 +9220,8 @@ void func_175()
 		{
 			iLocal_90 = 498972213;
 			iLocal_91 = -512924631;
-			OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_90, joaat("prop_sec_barrier_ld_01a"), 61f, -633f, 32f, 1, 1, 0);
-			OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_91, joaat("prop_sec_barrier_ld_01a"), 66f, -618f, 32f, 1, 1, 0);
+			OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_90, joaat("prop_sec_barrier_ld_01a"), 61f, -633f, 32f, 1, true, 0);
+			OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_91, joaat("prop_sec_barrier_ld_01a"), 66f, -618f, 32f, 1, true, 0);
 			iLocal_338 = 1;
 		}
 		if (iLocal_338 == 1)
@@ -9240,10 +9240,10 @@ void func_175()
 					}
 					if (fLocal_97 <= 1f)
 					{
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_90, fLocal_97, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_91, fLocal_97, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_90, 4, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_91, 4, 0, 1);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_90, fLocal_97, false, true);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_91, fLocal_97, false, true);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_90, 4, false, true);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_91, 4, false, true);
 						iLocal_317 = 0;
 					}
 				}
@@ -9259,10 +9259,10 @@ void func_175()
 					}
 					if (fLocal_97 >= 0f)
 					{
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_90, fLocal_97, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_91, fLocal_97, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_90, 4, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_91, 4, 0, 1);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_90, fLocal_97, false, true);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_91, fLocal_97, false, true);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_90, 4, false, true);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_91, 4, false, true);
 						iLocal_317 = 0;
 					}
 				}
@@ -9281,10 +9281,10 @@ void func_175()
 					}
 					if (fLocal_97 >= 0f)
 					{
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_90, fLocal_97, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_91, fLocal_97, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_90, 4, 0, 1);
-						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_91, 4, 0, 1);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_90, fLocal_97, false, true);
+						OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iLocal_91, fLocal_97, false, true);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_90, 4, false, true);
+						OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_91, 4, false, true);
 						iLocal_317 = 1;
 					}
 				}

@@ -46407,26 +46407,26 @@ void func_376(var uParam0, var uParam1, bool bParam2)
 	uParam0->f_22 = fVar0;
 	if (bParam2)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_DART_MASTER", uParam1->f_1, 0, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_DART_MASTER", uParam1->f_1, 0, false, 0, 0);
 	}
 	if (fVar0 < 0.009f)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BULLSEYE_MASTER", uParam1->f_1, 0, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BULLSEYE_MASTER", uParam1->f_1, 0, false, 0, 0);
 		uParam0->f_20 = 50;
 	}
 	else if (fVar0 < 0.021f)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, false, 0, 0);
 		uParam0->f_20 = 25;
 	}
 	else if (fVar0 > 0.3f)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_WALL_MASTER", uParam1->f_1, 0, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_WALL_MASTER", uParam1->f_1, 0, false, 0, 0);
 		uParam0->f_20 = 0;
 	}
 	else if (fVar0 >= 0.226f)
 	{
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, false, 0, 0);
 		uParam0->f_20 = 0;
 	}
 	else
@@ -46434,17 +46434,17 @@ void func_376(var uParam0, var uParam1, bool bParam2)
 		if (fVar0 > 0.1285f && fVar0 < 0.1405f)
 		{
 			uParam0->f_21 = 3;
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_SCORE_TRIPLE_MASTER", uParam1->f_1, 0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_SCORE_TRIPLE_MASTER", uParam1->f_1, 0, false, 0, 0);
 		}
 		else if (fVar0 > 0.2132f && fVar0 < 0.226f)
 		{
 			uParam0->f_21 = 2;
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_SCORE_DOUBLE_MASTER", uParam1->f_1, 0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_SCORE_DOUBLE_MASTER", uParam1->f_1, 0, false, 0, 0);
 		}
 		else
 		{
 			uParam0->f_21 = 1;
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, false, 0, 0);
 		}
 		if (uParam0->f_8 < 0f)
 		{
@@ -46459,7 +46459,7 @@ void func_376(var uParam0, var uParam1, bool bParam2)
 			{
 				if ((fVar1 <= (fVar2 - 8.1f) && fVar1 >= (fVar2 - 9.9f)) || (fVar1 >= (fVar2 + 8.1f) && fVar1 <= (fVar2 + 9.9f)))
 				{
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_WIRE_MASTER", uParam1->f_1, 0, 0, 0, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_WIRE_MASTER", uParam1->f_1, 0, false, 0, 0);
 				}
 				iVar5 = (iLocal_318[iVar4] * uParam0->f_21);
 				uParam0->f_20 = iVar5;
@@ -60706,7 +60706,7 @@ int func_595(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, in
 						{
 							if (func_380(uParam4[0 /*26*/], uParam1, 0, 0))
 							{
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, 0, 0, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, false, 0, 0);
 								iLocal_316++;
 								func_681(iParam5);
 								*iParam3 = 2;
@@ -60737,7 +60737,7 @@ int func_595(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, in
 						{
 							if (func_380(uParam4[1 /*26*/], uParam1, 0, 0))
 							{
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, 0, 0, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, false, 0, 0);
 								func_681(iParam5);
 								*iParam3 = 2;
 								iLocal_316++;
@@ -60769,7 +60769,7 @@ int func_595(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, in
 							if (func_380(uParam4[2 /*26*/], uParam1, 0, 0))
 							{
 								func_681(iParam5);
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, 0, 0, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "DARTS_HIT_BOARD_MASTER", uParam1->f_1, 0, false, 0, 0);
 								*iParam3 = 2;
 								*uParam0 = 2;
 							}
@@ -63778,7 +63778,7 @@ int func_718(var uParam0, var uParam1)
 		}
 		else
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DLC_Biker_Darts_Hit_Board_Remote_Master", uParam1->f_1, 0, 0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "DLC_Biker_Darts_Hit_Board_Remote_Master", uParam1->f_1, 0, false, 0, 0);
 			return 1;
 		}
 	}

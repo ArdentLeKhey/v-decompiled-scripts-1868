@@ -44979,7 +44979,7 @@ void func_467()
 		CAM::SET_CAM_ACTIVE(iLocal_371, true);
 		CAM::SHAKE_CAM(iLocal_371, "SKY_DIVING_SHAKE", 0.15f);
 		CAM::RENDER_SCRIPT_CAMS(true, false, 3000, 1, 0, 0);
-		AUDIO::PLAY_SOUND_FROM_COORD(iLocal_377, "WIND", vLocal_307, "EXTREME_01_SOUNDSET", 0, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(iLocal_377, "WIND", vLocal_307, "EXTREME_01_SOUNDSET", false, 0, 0);
 	}
 	func_455();
 }

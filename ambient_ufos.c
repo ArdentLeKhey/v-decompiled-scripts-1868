@@ -246,11 +246,11 @@ void __EntryFunction__()
 						iLocal_81 = MISC::GET_GAME_TIMER();
 						if (iLocal_70 == 0)
 						{
-							AUDIO::PLAY_SOUND_FROM_COORD(iLocal_80, "SPECIAL_EVIL_UFO_DEATH_RAY", vLocal_72[iLocal_70 /*3*/], 0, 0, 0, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(iLocal_80, "SPECIAL_EVIL_UFO_DEATH_RAY", vLocal_72[iLocal_70 /*3*/], 0, false, 0, 0);
 						}
 						else
 						{
-							AUDIO::PLAY_SOUND_FROM_COORD(iLocal_80, "SPECIAL_EVIL_UFO_DEATH_RAY_3", vLocal_72[iLocal_70 /*3*/], 0, 0, 0, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(iLocal_80, "SPECIAL_EVIL_UFO_DEATH_RAY_3", vLocal_72[iLocal_70 /*3*/], 0, false, 0, 0);
 						}
 						func_7();
 						func_6();

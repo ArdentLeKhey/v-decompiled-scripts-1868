@@ -923,12 +923,12 @@ void func_32(bool bParam0, bool bParam1, bool bParam2)
 				}
 				else if (!func_28(11))
 				{
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 					func_552(11);
 				}
 				if (!func_28(9))
 				{
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "descend_impact", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "descend_impact", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 					func_552(9);
 				}
 			}
@@ -971,20 +971,20 @@ void func_32(bool bParam0, bool bParam1, bool bParam2)
 						ENTITY::SET_ENTITY_COORDS_NO_OFFSET(func_19(bParam2), Local_204.f_4, 0, 0, 1);
 						ENTITY::SET_ENTITY_HEADING(func_19(bParam2), Local_204.f_3);
 					}
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "release_toy", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "release_toy", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 					if (!bParam2)
 					{
 						if (func_112(func_19(0)))
 						{
 							StringCopy(&(Local_206.f_54), "CLAW_RAREWIN", 64);
 							func_104(&(Local_206.f_54), 1);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "rare_win", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "rare_win", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 						}
 						else
 						{
 							StringCopy(&(Local_206.f_54), "CLAW_WIN", 64);
 							func_104(&(Local_206.f_54), 1);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "win", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "win", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 						}
 						func_94();
 					}
@@ -993,13 +993,13 @@ void func_32(bool bParam0, bool bParam1, bool bParam2)
 				else
 				{
 					StringCopy(&(Local_206.f_54), "CLAW_FAIL", 64);
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 					func_104(&(Local_206.f_54), 1);
 				}
 			}
 			else
 			{
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 				StringCopy(&(Local_206.f_54), "CLAW_FAIL", 64);
 				func_104(&(Local_206.f_54), 1);
 			}
@@ -82913,11 +82913,11 @@ void func_441(int iParam0, var uParam1)
 {
 	if (MISC::IS_BIT_SET(*iParam0, 8))
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_500(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_500(), 1000f, true, false, 0, 0f, 262144);
 	}
 	else
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_501(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_501(), 1000f, true, false, 0, 0f, 262144);
 	}
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ((*uParam1)[1]));
 }
@@ -83480,7 +83480,7 @@ void func_465(var uParam0, float fParam1)
 	{
 		if (!ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), sVar0, "drill_straight_idle_drill_bit", 3))
 		{
-			ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), "drill_straight_idle_drill_bit", sVar0, 1000f, true, 0, 0, 0f, 0);
+			ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), "drill_straight_idle_drill_bit", sVar0, 1000f, true, false, 0, 0f, 0);
 		}
 		else
 		{
@@ -83922,11 +83922,11 @@ void func_485(int iParam0, var uParam1, int iParam2)
 	}
 	if (MISC::IS_BIT_SET(*iParam0, 8))
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_500(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_500(), 1000f, true, false, 0, 0f, 262144);
 	}
 	else
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_501(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_501(), 1000f, true, false, 0, 0f, 262144);
 	}
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ((*uParam1)[1]));
 }
@@ -88057,14 +88057,14 @@ void func_563(bool bParam0)
 			if (func_28(6))
 			{
 				func_27(10, 1);
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend_win", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend_win", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 			}
 			else
 			{
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend_lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend_lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 				func_27(12, 1);
 				StringCopy(&(Local_206.f_54), "CLAW_FAIL", 64);
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "lose", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 				func_104(&(Local_206.f_54), 1);
 			}
 		}
@@ -88126,7 +88126,7 @@ void func_566()
 	if (Local_206.f_9 == -1)
 	{
 		Local_206.f_9 = AUDIO::GET_SOUND_ID();
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_206.f_9, "move", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_206.f_9, "move", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 	}
 }
 
@@ -88838,7 +88838,7 @@ void func_600()
 	{
 		if (!func_28(11))
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 			func_552(11);
 		}
 		func_27(5, 1);
@@ -88847,7 +88847,7 @@ void func_600()
 	{
 		if (!func_28(11))
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "ascend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 			func_552(11);
 		}
 		func_27(5, 1);
@@ -89268,7 +89268,7 @@ void func_614()
 		{
 			MISC::SET_BIT(&(Local_203[PLAYER::PLAYER_ID() /*4*/]), 1);
 		}
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "descend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "descend", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 		StringCopy(&(Local_206.f_54), "CLAW_DESCENDING_ARM", 64);
 		func_104(&(Local_206.f_54), 1);
 		ENTITY::FREEZE_ENTITY_POSITION(Local_206.f_25[0], true);
@@ -89629,7 +89629,7 @@ void func_624()
 		MISC::SET_BIT(&(Local_203[PLAYER::PLAYER_ID() /*4*/]), 0);
 		func_11(&(Local_206.f_98));
 		Global_1703069.f_45 = -1;
-		AUDIO::PLAY_SOUND_FROM_COORD(-1, "start", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", 1, 10, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(-1, "start", ENTITY::GET_ENTITY_COORDS(Local_206.f_24, true), "dlc_ch_claw_crane_sounds", true, 10, 0);
 		func_16(&(Local_206.f_42), 1);
 		func_27(1, 1);
 	}

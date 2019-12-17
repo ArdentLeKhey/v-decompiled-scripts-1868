@@ -14369,7 +14369,7 @@ void func_200()
 				if (AUDIO::HAS_SOUND_FINISHED(iLocal_1914))
 				{
 					iLocal_1914 = AUDIO::GET_SOUND_ID();
-					AUDIO::PLAY_SOUND_FROM_COORD(iLocal_1914, "FINALE_PETROL_SPILL", 1733f, -1627f, 113f, 0, 0, 0, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(iLocal_1914, "FINALE_PETROL_SPILL", 1733f, -1627f, 113f, 0, false, 0, 0);
 				}
 				CAM::DO_SCREEN_FADE_IN(800);
 				iLocal_484 = PED::CREATE_SYNCHRONIZED_SCENE(1736.295f, -1619.891f, 111.29f, 0f, 0f, 0f, 2);
@@ -41752,7 +41752,7 @@ void func_323()
 							{
 								VEHICLE::SET_VEHICLE_LIGHTS(Local_227[1 /*2*/], 1);
 								iLocal_1914 = AUDIO::GET_SOUND_ID();
-								AUDIO::PLAY_SOUND_FROM_COORD(iLocal_1914, "FINALE_PETROL_SPILL", 1733f, -1627f, 113f, 0, 0, 0, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(iLocal_1914, "FINALE_PETROL_SPILL", 1733f, -1627f, 113f, 0, false, 0, 0);
 								iLocal_203 = 1;
 							}
 						}

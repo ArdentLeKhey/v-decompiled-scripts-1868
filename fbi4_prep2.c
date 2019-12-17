@@ -3925,8 +3925,8 @@ int func_124(int iParam0, vector3 vParam1, float fParam2)
 			else if (func_128(&Local_200, Local_200.f_5, Local_200.f_1, Local_200.f_4, 1))
 			{
 				VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(Local_200, 0);
-				VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_200, 4, 0, 0);
-				VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_200, 0, 1, 0);
+				VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_200, 4, 0, false);
+				VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_200, 0, 1, false);
 				VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_200, 100f);
 				return 1;
 			}

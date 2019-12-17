@@ -2485,7 +2485,7 @@ void func_72()
 	}
 	iLocal_467 = 1;
 	func_380(27, 0);
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[13 /*31*/], 4, 1, 0);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[13 /*31*/], 4, true, false);
 	iLocal_468 = 0;
 }
 
@@ -36889,11 +36889,11 @@ void func_363()
 {
 	if (PED::IS_COP_PED_IN_AREA_3D(385.8528f, -1629.945f, 35.29278f, 398.8063f, -1640.865f, 28f))
 	{
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 0, 1, 1);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 0, true, true);
 	}
 	else
 	{
-		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 1, 1, 1);
+		OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 1, true, true);
 	}
 }
 
@@ -36945,11 +36945,11 @@ void func_365(int iParam0, float fParam1)
 			{
 				iLocal_271 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(400.8628f, -1609.739f, 28.29278f, 7.5f, 2f, 9.5f, func_81(229.3746f), 0, 7);
 			}
-			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iParam0, *fParam1, 1, 1);
+			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iParam0, *fParam1, true, true);
 			*fParam1 = (*fParam1 - (0.2f * SYSTEM::TIMESTEP()));
 			if (*fParam1 <= 0f)
 			{
-				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 1, 1, 0);
+				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iParam0, 1, true, false);
 				PATHFIND::REMOVE_NAVMESH_BLOCKING_OBJECT(iLocal_271);
 				*fParam1 = 0f;
 			}
@@ -36961,7 +36961,7 @@ void func_366(int iParam0, float fParam1)
 {
 	if (*fParam1 != 1f)
 	{
-		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iParam0, *fParam1, 1, 1);
+		OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(iParam0, *fParam1, true, true);
 		*fParam1 = (*fParam1 + (0.2f * SYSTEM::TIMESTEP()));
 		if (PATHFIND::DOES_NAVMESH_BLOCKING_OBJECT_EXIST(iLocal_271))
 		{
@@ -37276,10 +37276,10 @@ void func_385()
 	iLocal_269 = -1469527606;
 	if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(iLocal_269))
 	{
-		OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_269, joaat("prop_fnclink_03gate5"), 391.8602f, -1636.07f, 29.9744f, 1, 1, 0);
+		OBJECT::ADD_DOOR_TO_SYSTEM(iLocal_269, joaat("prop_fnclink_03gate5"), 391.8602f, -1636.07f, 29.9744f, 1, true, 0);
 	}
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[13 /*31*/], 1, 1, 0);
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 1, 1, 0);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[13 /*31*/], 1, true, false);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 1, true, false);
 }
 
 void func_386()
@@ -37455,9 +37455,9 @@ void func_396()
 	{
 		AUDIO::SET_SCRIPT_UPDATE_DOOR_AUDIO(Global_40519[13 /*31*/], 0);
 	}
-	OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[13 /*31*/], 0f, 1, 1);
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[13 /*31*/], 4, 1, 1);
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 0, 1, 0);
+	OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Global_40519[13 /*31*/], 0f, true, true);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Global_40519[13 /*31*/], 4, true, true);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(iLocal_269, 0, true, false);
 	OBJECT::REMOVE_DOOR_FROM_SYSTEM(iLocal_269);
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_264, 0);
 	func_55();

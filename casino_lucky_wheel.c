@@ -52518,7 +52518,7 @@ void func_710(char* sParam0)
 	if (AUDIO::HAS_SOUND_FINISHED(Local_182.f_401))
 	{
 		Local_182.f_401 = AUDIO::GET_SOUND_ID();
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_401, sParam0, func_711(), "dlc_vw_casino_lucky_wheel_sounds", 1, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_401, sParam0, func_711(), "dlc_vw_casino_lucky_wheel_sounds", true, 0, 0);
 	}
 }
 
@@ -52532,7 +52532,7 @@ void func_712(float fParam0)
 	if (AUDIO::HAS_SOUND_FINISHED(Local_182.f_400))
 	{
 		Local_182.f_400 = AUDIO::GET_SOUND_ID();
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_400, "Win", func_711(), "dlc_vw_casino_lucky_wheel_sounds", 1, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_400, "Win", func_711(), "dlc_vw_casino_lucky_wheel_sounds", true, 0, 0);
 		AUDIO::SET_VARIABLE_ON_SOUND(Local_182.f_400, "winSize", fParam0);
 	}
 	else
@@ -53006,19 +53006,19 @@ char* func_728(int iParam0)
 
 void func_729(float fParam0)
 {
-	int iVar0;
+	bool bVar0;
 	
 	if (func_35(27))
 	{
 		if (Local_182.f_399 == -1 && AUDIO::HAS_SOUND_FINISHED(Local_182.f_399))
 		{
 			Local_182.f_399 = AUDIO::GET_SOUND_ID();
-			iVar0 = 1;
+			bVar0 = true;
 			if (fParam0 > 0.5f)
 			{
-				iVar0 = 0;
+				bVar0 = false;
 			}
-			AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_399, "Spin_Single_Ticks", func_711(), "dlc_vw_casino_lucky_wheel_sounds", iVar0, 0, 0);
+			AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_399, "Spin_Single_Ticks", func_711(), "dlc_vw_casino_lucky_wheel_sounds", bVar0, 0, 0);
 			AUDIO::SET_VARIABLE_ON_SOUND(Local_182.f_399, "spinSpeed", fParam0);
 		}
 		else
@@ -53036,7 +53036,7 @@ void func_730(float fParam0)
 	if (AUDIO::HAS_SOUND_FINISHED(Local_182.f_398) && Local_182.f_398 == -1)
 	{
 		Local_182.f_398 = AUDIO::GET_SOUND_ID();
-		AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_398, "Spin_Start", func_711(), "dlc_vw_casino_lucky_wheel_sounds", 1, 0, 0);
+		AUDIO::PLAY_SOUND_FROM_COORD(Local_182.f_398, "Spin_Start", func_711(), "dlc_vw_casino_lucky_wheel_sounds", true, 0, 0);
 		AUDIO::SET_VARIABLE_ON_SOUND(Local_182.f_398, "spinSpeed", fParam0);
 	}
 	else

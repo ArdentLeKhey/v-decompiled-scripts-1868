@@ -2026,11 +2026,11 @@ void func_49(var uParam0)
 			uParam0->f_4 = 2;
 			AUDIO::STOP_SOUND(iLocal_47);
 			iLocal_48 = 0;
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "CLOSED", *uParam0, "DOOR_GARAGE", 0, 0, 1);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "CLOSED", *uParam0, "DOOR_GARAGE", false, 0, 1);
 		}
 		else if (!iLocal_48)
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(iLocal_47, "CLOSING", *uParam0, "DOOR_GARAGE", 0, 0, 1);
+			AUDIO::PLAY_SOUND_FROM_COORD(iLocal_47, "CLOSING", *uParam0, "DOOR_GARAGE", false, 0, 1);
 			iLocal_48 = 1;
 		}
 	}
@@ -2043,11 +2043,11 @@ void func_49(var uParam0)
 			uParam0->f_4 = 1;
 			AUDIO::STOP_SOUND(iLocal_47);
 			iLocal_48 = 0;
-			AUDIO::PLAY_SOUND_FROM_COORD(-1, "OPENED", *uParam0, "DOOR_GARAGE", 0, 0, 1);
+			AUDIO::PLAY_SOUND_FROM_COORD(-1, "OPENED", *uParam0, "DOOR_GARAGE", false, 0, 1);
 		}
 		else if (!iLocal_48)
 		{
-			AUDIO::PLAY_SOUND_FROM_COORD(iLocal_47, "OPENING", *uParam0, "DOOR_GARAGE", 0, 0, 1);
+			AUDIO::PLAY_SOUND_FROM_COORD(iLocal_47, "OPENING", *uParam0, "DOOR_GARAGE", false, 0, 1);
 			iLocal_48 = 1;
 		}
 	}

@@ -36710,7 +36710,7 @@ void func_306()
 			{
 				VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_82.f_35[0], 1);
 				VEHICLE::SET_VEHICLE_ENGINE_ON(Local_82.f_35[0], true, true, 0);
-				VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_82.f_35[0], 0, 0, 0);
+				VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_82.f_35[0], 0, 0, false);
 			}
 			if (func_437(iLocal_89))
 			{

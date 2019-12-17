@@ -44883,7 +44883,7 @@ void func_446(var uParam0)
 					vVar0.z = uVar1;
 				}
 				GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_ENTITY("scr_alien_disintegrate", uParam0->f_2, 0f, 0f, 0f, 0f, 0f, 0f, fLocal_492, 0, 0, 0);
-				AUDIO::PLAY_SOUND_FROM_COORD(-1, "DESPAWN", vVar0, "BARRY_01_SOUNDSET", 0, 0, 0);
+				AUDIO::PLAY_SOUND_FROM_COORD(-1, "DESPAWN", vVar0, "BARRY_01_SOUNDSET", false, 0, 0);
 				if (iLocal_116 == 1)
 				{
 				}
@@ -45216,7 +45216,7 @@ void func_453(var uParam0)
 			}
 			if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(uParam0->f_25))
 			{
-				uParam0->f_25 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_alien_impact", vVar3, 0f, 0f, 0f, fVar5, 0, 0, 0, 0);
+				uParam0->f_25 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_alien_impact", vVar3, 0f, 0f, 0f, fVar5, 0, 0, 0, false);
 			}
 			fVar4 = func_8(uParam0->f_4, vVar3, 1);
 			if ((uParam0->f_12 >= fVar4 && iVar6 > 0) && iVar7 < 0)

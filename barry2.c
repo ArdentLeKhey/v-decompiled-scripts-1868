@@ -49820,7 +49820,7 @@ void func_550(var uParam0)
 							vVar0.z = (vVar0.z + 1f);
 						}
 						GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD("scr_clown_death", vVar0, ENTITY::GET_ENTITY_ROTATION(uParam0->f_3, 2), 2f, 0, 0, 0);
-						AUDIO::PLAY_SOUND_FROM_COORD(-1, "clown_die_wrapper", vVar0, "BARRY_02_SOUNDSET", 0, 0, 0);
+						AUDIO::PLAY_SOUND_FROM_COORD(-1, "clown_die_wrapper", vVar0, "BARRY_02_SOUNDSET", false, 0, 0);
 						uParam0->f_2 = 17;
 						if (iLocal_97 == 9)
 						{

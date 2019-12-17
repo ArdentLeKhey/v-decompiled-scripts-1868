@@ -115770,7 +115770,7 @@ void func_699()
 	{
 		SYSTEM::WAIT(0);
 	}
-	VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_50[0 /*2*/], 0, 0, 0);
+	VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_50[0 /*2*/], 0, 0, false);
 	if (func_709())
 	{
 		func_665(0, -1, 1);

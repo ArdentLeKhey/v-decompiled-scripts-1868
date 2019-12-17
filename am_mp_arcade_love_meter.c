@@ -80347,11 +80347,11 @@ void func_372(int iParam0, var uParam1)
 {
 	if (MISC::IS_BIT_SET(*iParam0, 8))
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_432(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_432(), 1000f, true, false, 0, 0f, 262144);
 	}
 	else
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_433(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "BAG_DRILL_STRAIGHT_FAIL", func_433(), 1000f, true, false, 0, 0f, 262144);
 	}
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ((*uParam1)[1]));
 }
@@ -80939,7 +80939,7 @@ void func_397(var uParam0, float fParam1)
 	{
 		if (!ENTITY::IS_ENTITY_PLAYING_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), sVar0, "drill_straight_idle_drill_bit", 3))
 		{
-			ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), "drill_straight_idle_drill_bit", sVar0, 1000f, true, 0, 0, 0f, 0);
+			ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam0)[0]), "drill_straight_idle_drill_bit", sVar0, 1000f, true, false, 0, 0f, 0);
 		}
 		else
 		{
@@ -81381,11 +81381,11 @@ void func_417(int iParam0, var uParam1, int iParam2)
 	}
 	if (MISC::IS_BIT_SET(*iParam0, 8))
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_432(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_432(), 1000f, true, false, 0, 0f, 262144);
 	}
 	else
 	{
-		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_433(), 1000f, true, 0, 0, 0f, 262144);
+		ENTITY::PLAY_ENTITY_ANIM(NETWORK::NET_TO_OBJ((*uParam1)[1]), "bag_drill_straight_idle", func_433(), 1000f, true, false, 0, 0f, 262144);
 	}
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(NETWORK::NET_TO_OBJ((*uParam1)[1]));
 }
@@ -85226,7 +85226,7 @@ void func_482()
 							if (Local_206.f_2 == 0)
 							{
 								StringCopy(&(Local_206.f_40), "LOVETEST_NEMESIS", 64);
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Nemesis", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Nemesis", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 							}
 							Local_206.f_32 = 67;
 							sVar2 = "ARCCAB_LOVE_P1";
@@ -85245,7 +85245,7 @@ void func_482()
 							if (Local_206.f_2 == 0)
 							{
 								StringCopy(&(Local_206.f_40), "LOVETEST_ICE_COLD", 64);
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Chillin", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Chillin", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 							}
 						}
 						break;
@@ -85254,7 +85254,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_COLD_SHOULDER", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_BuzzKill", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_BuzzKill", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						sVar2 = "ARCCAB_LOVE_P3";
 						func_584(8788, -1);
@@ -85265,7 +85265,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_THAW_OUT", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Not", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Not", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						sVar2 = "ARCCAB_LOVE_P4";
 						func_584(8789, -1);
@@ -85276,7 +85276,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_CLAMMY", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Schwing", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Schwing", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						Local_206.f_32 = 63;
 						sVar2 = "ARCCAB_LOVE_P5";
@@ -85287,7 +85287,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_WARMER", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Pimpin", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Pimpin", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						Local_206.f_32 = 64;
 						sVar2 = "ARCCAB_LOVE_P6";
@@ -85298,7 +85298,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_FLUSHED", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Hype", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Hype", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						Local_206.f_32 = 64;
 						sVar2 = "ARCCAB_LOVE_P7";
@@ -85309,7 +85309,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_GETTING_STEAMY", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Sweet", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_Sweet", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						Local_206.f_32 = 65;
 						sVar2 = "ARCCAB_LOVE_P8";
@@ -85320,7 +85320,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_BURNING_LOINS", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_LoveSick", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_LoveSick", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						Local_206.f_32 = 65;
 						sVar2 = "ARCCAB_LOVE_P9";
@@ -85331,7 +85331,7 @@ void func_482()
 						if (Local_206.f_2 == 0)
 						{
 							StringCopy(&(Local_206.f_40), "LOVETEST_HOT_N_HEAVY", 64);
-							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_SoFine", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+							AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_SoFine", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 						}
 						Local_206.f_32 = 66;
 						sVar2 = "ARCCAB_LOVE_P10";
@@ -85345,7 +85345,7 @@ void func_482()
 							if (Local_206.f_2 == 0)
 							{
 								StringCopy(&(Local_206.f_40), "LOVETEST_TRUELOVE", 64);
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_PerfectMatch", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_PerfectMatch", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 							}
 							MISC::SET_BIT(&iVar3, 0);
 							func_583();
@@ -85368,7 +85368,7 @@ void func_482()
 							if (Local_206.f_2 == 0)
 							{
 								StringCopy(&(Local_206.f_40), "LOVETEST_SIZZLIN", 64);
-								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_PerfectMatch", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+								AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_PerfectMatch", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 							}
 							sVar2 = "ARCCAB_LOVE_P11";
 							func_584(8796, -1);
@@ -85394,7 +85394,7 @@ void func_482()
 						StringCopy(&(Local_206.f_40), "LOVETEST_UNEVEN", 64);
 					}
 					func_16(&(Local_206.f_40), 1);
-					AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_BuzzKill", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(-1, "Outcome_BuzzKill", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 				}
 				if (iVar4 >= Global_1703069.f_46)
 				{
@@ -90589,7 +90589,7 @@ void func_610()
 				if (Local_206.f_3 == -1)
 				{
 					Local_206.f_3 = AUDIO::GET_SOUND_ID();
-					AUDIO::PLAY_SOUND_FROM_COORD(Local_206.f_3, "Calculate_Outcome", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", 1, 20, 0);
+					AUDIO::PLAY_SOUND_FROM_COORD(Local_206.f_3, "Calculate_Outcome", ENTITY::GET_ENTITY_COORDS(Local_206.f_20, true), "DLC_H3_LoveMachine_Sounds", true, 20, 0);
 					AUDIO::SET_VARIABLE_ON_SOUND(Local_206.f_3, "Time", 8f);
 				}
 				StringCopy(&(Local_206.f_40), "LOVETEST_GUAGE_RISING", 64);

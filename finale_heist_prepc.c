@@ -254,13 +254,13 @@ void func_1()
 			{
 				if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Local_96))
 				{
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_96, 0f, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 1, 1, 1);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_96, 0f, true, false);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 1, true, true);
 				}
 				if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Local_97))
 				{
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_97, 0f, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 1, 1, 1);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_97, 0f, true, false);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 1, true, true);
 				}
 				func_2();
 				func_461();
@@ -1031,13 +1031,13 @@ void func_20()
 				iLocal_93 = 1;
 				if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Local_96))
 				{
-					OBJECT::ADD_DOOR_TO_SYSTEM(Local_96, joaat("prop_com_gar_door_01"), -440.0606f, -2171.827f, 11.3672f, 1, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 1, 1, 1);
+					OBJECT::ADD_DOOR_TO_SYSTEM(Local_96, joaat("prop_com_gar_door_01"), -440.0606f, -2171.827f, 11.3672f, 1, true, 0);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 1, true, true);
 				}
 				if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Local_97))
 				{
-					OBJECT::ADD_DOOR_TO_SYSTEM(Local_97, joaat("prop_com_gar_door_01"), -445.3054f, -2171.827f, 11.3672f, 1, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 1, 1, 1);
+					OBJECT::ADD_DOOR_TO_SYSTEM(Local_97, joaat("prop_com_gar_door_01"), -445.3054f, -2171.827f, 11.3672f, 1, true, 0);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 1, true, true);
 				}
 				AUDIO::TRIGGER_MUSIC_EVENT(func_64(0));
 				func_63(1);
@@ -1357,8 +1357,8 @@ void func_35()
 {
 	HUD::CLEAR_PRINTS();
 	func_44();
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 2, 1, 1);
-	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 2, 1, 1);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 2, true, true);
+	OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 2, true, true);
 	func_42(1, func_43());
 	if (func_4(iLocal_122))
 	{
@@ -10497,22 +10497,22 @@ void func_198(var uParam0)
 			if (!func_199(*uParam0))
 			{
 				uParam0->f_22 = 3;
-				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, 1, 1);
+				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, true, true);
 				uParam0->f_1 = (uParam0->f_1 - (0.2f * SYSTEM::TIMESTEP()));
 				if (uParam0->f_1 <= 0f || (iLocal_92 == 4 && !func_56(PLAYER::PLAYER_PED_ID(), vLocal_109, 100f)))
 				{
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(*uParam0, 1, 1, 1);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(*uParam0, 1, true, true);
 					uParam0->f_1 = 0f;
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, 1, 1);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, true, true);
 					uParam0->f_22 = 0;
 				}
 			}
 			else if (iLocal_92 == 4 && !func_56(PLAYER::PLAYER_PED_ID(), vLocal_109, 100f))
 			{
 				MISC::CLEAR_AREA(-442.9902f, -2168.623f, 9.3184f, 5f, 0, 0, 0, false);
-				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(*uParam0, 1, 1, 1);
+				OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(*uParam0, 1, true, true);
 				uParam0->f_1 = 0f;
-				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, 1, 1);
+				OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, true, true);
 				uParam0->f_22 = 0;
 			}
 			else
@@ -10542,7 +10542,7 @@ void func_200(var uParam0)
 		if (uParam0->f_22 != 2)
 		{
 			uParam0->f_22 = 1;
-			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, 1, 1);
+			OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(*uParam0, uParam0->f_1, true, true);
 			uParam0->f_1 = (uParam0->f_1 + (0.2f * SYSTEM::TIMESTEP()));
 			if (uParam0->f_1 >= 1f)
 			{
@@ -10861,15 +10861,15 @@ void func_211()
 				TASK::SET_SCENARIO_TYPE_ENABLED("WORLD_HUMAN_LEANING", false);
 				if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Local_96))
 				{
-					OBJECT::ADD_DOOR_TO_SYSTEM(Local_96, joaat("prop_com_gar_door_01"), -440.0606f, -2171.827f, 11.3672f, 1, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_96, 0f, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 1, 1, 1);
+					OBJECT::ADD_DOOR_TO_SYSTEM(Local_96, joaat("prop_com_gar_door_01"), -440.0606f, -2171.827f, 11.3672f, 1, true, 0);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_96, 0f, true, false);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_96, 1, true, true);
 				}
 				if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(Local_97))
 				{
-					OBJECT::ADD_DOOR_TO_SYSTEM(Local_97, joaat("prop_com_gar_door_01"), -445.3054f, -2171.827f, 11.3672f, 1, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_97, 0f, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 1, 1, 1);
+					OBJECT::ADD_DOOR_TO_SYSTEM(Local_97, joaat("prop_com_gar_door_01"), -445.3054f, -2171.827f, 11.3672f, 1, true, 0);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(Local_97, 0f, true, false);
+					OBJECT::DOOR_SYSTEM_SET_DOOR_STATE(Local_97, 1, true, true);
 				}
 				RECORDING::_0x293220DA1B46CEBC(2f, 8f, 4);
 				func_63(1);

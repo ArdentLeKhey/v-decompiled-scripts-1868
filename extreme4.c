@@ -34780,7 +34780,7 @@ void func_229()
 			{
 				if (PED::IS_SYNCHRONIZED_SCENE_RUNNING(iLocal_295) && PED::GET_SYNCHRONIZED_SCENE_PHASE(iLocal_295) >= 0.44f)
 				{
-					iLocal_104 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_extrm4_water_blood", 1655.27f, -20.8134f, 133.842f, 0f, 0f, 0f, 1f, 0, 0, 0, 0);
+					iLocal_104 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_extrm4_water_blood", 1655.27f, -20.8134f, 133.842f, 0f, 0f, 0f, 1f, 0, 0, 0, false);
 					GRAPHICS::SET_PARTICLE_FX_LOOPED_ALPHA(iLocal_104, 1f);
 					iLocal_304 = 1;
 				}
@@ -34882,7 +34882,7 @@ void func_229()
 		CAM::SET_CAM_ACTIVE(iLocal_284, true);
 		if (!iLocal_304)
 		{
-			iLocal_104 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_extrm4_water_blood", 1655.27f, -20.8134f, 133.842f, 0f, 0f, 0f, 1f, 0, 0, 0, 0);
+			iLocal_104 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_extrm4_water_blood", 1655.27f, -20.8134f, 133.842f, 0f, 0f, 0f, 1f, 0, 0, 0, false);
 			GRAPHICS::SET_PARTICLE_FX_LOOPED_ALPHA(iLocal_104, 1f);
 			iLocal_304 = 1;
 		}
