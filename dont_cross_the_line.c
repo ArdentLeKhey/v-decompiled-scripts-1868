@@ -3283,7 +3283,7 @@ void func_99(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 	
-	iVar0 = Global_2542527[iParam0 /*3*/][func_101(iParam2)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_101(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, iParam3);
@@ -15146,7 +15146,7 @@ void func_125(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2542527[iParam0 /*3*/][func_101(iParam2)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_101(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, iParam3);
@@ -15161,7 +15161,7 @@ int func_126(int iParam0, int iParam1, int iParam2)
 	if (iParam2 == 0)
 	{
 	}
-	iVar0 = Global_2542527[iParam0 /*3*/][func_101(iParam1)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_101(iParam1)];
 	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 	{
 		return uVar1;

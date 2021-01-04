@@ -4743,7 +4743,7 @@ int func_121(struct<2> Param0, var uParam1)
 	}
 	if (Param0.f_1 > Global_2411464[1])
 	{
-		if (Param0 < Global_2411468[0])
+		if (Param0 < WorldCoordsLimits[0])
 		{
 			return 1;
 		}
@@ -4754,15 +4754,15 @@ int func_121(struct<2> Param0, var uParam1)
 	}
 	if (Param0.f_1 > Global_2411464[2])
 	{
-		if (Param0 < Global_2411468[1])
+		if (Param0 < WorldCoordsLimits[1])
 		{
 			return 3;
 		}
-		else if (Param0 < Global_2411468[2])
+		else if (Param0 < WorldCoordsLimits[2])
 		{
 			return 4;
 		}
-		else if (Param0 < Global_2411468[3])
+		else if (Param0 < WorldCoordsLimits[3])
 		{
 			return 5;
 		}
@@ -18269,7 +18269,7 @@ void func_515(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2542527[iParam0 /*3*/][func_426(iParam2)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_426(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, iParam3);
@@ -18284,7 +18284,7 @@ int func_516(int iParam0, int iParam1, int iParam2)
 	if (iParam2 == 0)
 	{
 	}
-	iVar0 = Global_2542527[iParam0 /*3*/][func_426(iParam1)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_426(iParam1)];
 	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -18321,7 +18321,7 @@ void func_518(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 	
-	iVar0 = Global_2542527[iParam0 /*3*/][func_426(iParam2)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_426(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, iParam3);

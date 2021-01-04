@@ -19499,7 +19499,7 @@ int func_117(int iParam0, int iParam1, int iParam2)
 	if (iParam2 == 0)
 	{
 	}
-	iVar0 = Global_2542527[iParam0 /*3*/][func_118(iParam1)];
+	iVar0 = BigHashList[iParam0 /*3*/][func_118(iParam1)];
 	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 	{
 		return uVar1;
