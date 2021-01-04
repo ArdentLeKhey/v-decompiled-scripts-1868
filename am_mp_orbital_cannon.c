@@ -2771,15 +2771,15 @@ void func_70(vector3 vParam0)
 			}
 			iVar6++;
 		}
-		iVar7 = VEHICLE::_GET_ALL_VEHICLES(&Global_1315843);
+		iVar7 = VEHICLE::_GET_ALL_VEHICLES(&WorldVehArray);
 		iVar8 = 0;
 		while (iVar8 < iVar7)
 		{
-			if (ENTITY::DOES_ENTITY_EXIST(Global_1315843[iVar8]))
+			if (ENTITY::DOES_ENTITY_EXIST(WorldVehArray[iVar8]))
 			{
-				if (((func_74(Global_1315843[iVar8], 0) || func_73(Global_1315843[iVar8], 0)) || func_72(Global_1315843[iVar8], 0)) || func_71(Global_1315843[iVar8], 0))
+				if (((func_74(WorldVehArray[iVar8], 0) || func_73(WorldVehArray[iVar8], 0)) || func_72(WorldVehArray[iVar8], 0)) || func_71(WorldVehArray[iVar8], 0))
 				{
-					vVar3 = { ENTITY::GET_ENTITY_COORDS(Global_1315843[iVar8], false) };
+					vVar3 = { ENTITY::GET_ENTITY_COORDS(WorldVehArray[iVar8], false) };
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(vParam0, vVar3, false) < 15f && vVar3.z >= (vParam0.z - 15f))
 					{
 						FIRE::ADD_OWNED_EXPLOSION(PLAYER::PLAYER_PED_ID(), vVar3, 59, 1f, 1, 0, 1065353216);

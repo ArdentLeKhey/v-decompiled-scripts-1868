@@ -42689,7 +42689,7 @@ int func_1108(vector3 vParam0)
 	vector3 vVar7;
 	float fVar8;
 	
-	iVar0 = VEHICLE::_GET_ALL_VEHICLES(&Global_1315843);
+	iVar0 = VEHICLE::_GET_ALL_VEHICLES(&WorldVehArray);
 	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0))
 	{
 		iVar5 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), 0);
@@ -42703,19 +42703,19 @@ int func_1108(vector3 vParam0)
 	iVar4 = 0;
 	while (iVar4 < iVar0)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(Global_1315843[iVar4]))
+		if (ENTITY::DOES_ENTITY_EXIST(WorldVehArray[iVar4]))
 		{
-			if (!ENTITY::IS_ENTITY_DEAD(Global_1315843[iVar4], 0) && PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Global_1315843[iVar4], 0))
+			if (!ENTITY::IS_ENTITY_DEAD(WorldVehArray[iVar4], 0) && PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), WorldVehArray[iVar4], 0))
 			{
 			}
-			else if (func_1113(Global_1315843[iVar4]))
+			else if (func_1113(WorldVehArray[iVar4]))
 			{
 			}
-			else if (!func_1109(Global_1315843[iVar4]))
+			else if (!func_1109(WorldVehArray[iVar4]))
 			{
-				vVar1 = { ENTITY::GET_ENTITY_COORDS(Global_1315843[iVar4], false) };
-				fVar2 = ENTITY::GET_ENTITY_HEADING(Global_1315843[iVar4]);
-				iVar3 = ENTITY::GET_ENTITY_MODEL(Global_1315843[iVar4]);
+				vVar1 = { ENTITY::GET_ENTITY_COORDS(WorldVehArray[iVar4], false) };
+				fVar2 = ENTITY::GET_ENTITY_HEADING(WorldVehArray[iVar4]);
+				iVar3 = ENTITY::GET_ENTITY_MODEL(WorldVehArray[iVar4]);
 				if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), 0))
 				{
 					if (func_271(vVar1, fVar2, iVar3, vVar7, fVar8, iVar6, 0))

@@ -396,40 +396,40 @@ void func_1()
 	int iVar1;
 	
 	MISC::CLEAR_AREA_OF_VEHICLES(0f, 0f, 0f, 99999.9f, 0, 0, 0, 0, false, 0);
-	iVar0 = VEHICLE::_GET_ALL_VEHICLES(&Global_1315843);
+	iVar0 = VEHICLE::_GET_ALL_VEHICLES(&WorldVehArray);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(Global_1315843[iVar1]))
+		if (ENTITY::DOES_ENTITY_EXIST(WorldVehArray[iVar1]))
 		{
-			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() == 1 && !NETWORK::NETWORK_GET_ENTITY_IS_NETWORKED(Global_1315843[iVar1])) || NETWORK::NETWORK_IS_GAME_IN_PROGRESS() == 0)
+			if ((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() == 1 && !NETWORK::NETWORK_GET_ENTITY_IS_NETWORKED(WorldVehArray[iVar1])) || NETWORK::NETWORK_IS_GAME_IN_PROGRESS() == 0)
 			{
-				if (!ENTITY::GET_ENTITY_POPULATION_TYPE(Global_1315843[iVar1]) == 1)
+				if (!ENTITY::GET_ENTITY_POPULATION_TYPE(WorldVehArray[iVar1]) == 1)
 				{
-					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(Global_1315843[iVar1]) || !ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1315843[iVar1], 0))
+					if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(WorldVehArray[iVar1]) || !ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(WorldVehArray[iVar1], 0))
 					{
 						if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 						{
-							if (NETWORK::NETWORK_GET_ENTITY_IS_LOCAL(Global_1315843[iVar1]))
+							if (NETWORK::NETWORK_GET_ENTITY_IS_LOCAL(WorldVehArray[iVar1]))
 							{
-								ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_1315843[iVar1], false, 1);
+								ENTITY::SET_ENTITY_AS_MISSION_ENTITY(WorldVehArray[iVar1], false, 1);
 							}
 						}
 						else
 						{
-							ENTITY::SET_ENTITY_AS_MISSION_ENTITY(Global_1315843[iVar1], true, 1);
+							ENTITY::SET_ENTITY_AS_MISSION_ENTITY(WorldVehArray[iVar1], true, 1);
 						}
 					}
-					if (!ENTITY::IS_ENTITY_DEAD(Global_1315843[iVar1], 0))
+					if (!ENTITY::IS_ENTITY_DEAD(WorldVehArray[iVar1], 0))
 					{
-						if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Global_1315843[iVar1], 1))
+						if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), WorldVehArray[iVar1], 1))
 						{
 							TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID());
 						}
 					}
-					if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(Global_1315843[iVar1], 0))
+					if (ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(WorldVehArray[iVar1], 0))
 					{
-						VEHICLE::DELETE_VEHICLE(&(Global_1315843[iVar1]));
+						VEHICLE::DELETE_VEHICLE(&(WorldVehArray[iVar1]));
 					}
 				}
 			}

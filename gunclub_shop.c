@@ -161854,7 +161854,7 @@ int func_1180(int iParam0, var uParam1)
 	return 0;
 }
 
-bool func_1181(int iParam0)
+bool func_1181(int iParam0) // IsInAnAmmunation
 {
 	int iVar0;
 	char* sVar1;
